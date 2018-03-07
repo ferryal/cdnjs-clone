@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import {RaisedButton} from 'material-ui'
-import SearchButton from './SearchButton'
+import FormSearch from './FormSearch'
 
 const SegmentContent = () => (
   <div>
     {/* form input */}
-
+    <FormSearch />
   </div>
 )
 

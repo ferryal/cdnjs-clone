@@ -1,10 +1,9 @@
-import React, {Component} from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import {} from 'material-ui'
 
 const SegmentCTAHeader = () => (
     <div>
-      
+      <h3>CDNJS Finder</h3>
     </div>
 )
 

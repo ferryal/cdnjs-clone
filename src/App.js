@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import SegmentCTAHeader from './components/SegmentCTAHeader'
 import SegmentContent from './components/SegmentContent'
 import SegmentFooter from './components/SegmentFooter'
@@ -8,11 +9,15 @@ import SegmentFooter from './components/SegmentFooter'
 class App extends Component {
   render() {
     return(
-      <div className="">
-        <SegmentCTAHeader />
-        <SegmentContent />
-        <SegmentFooter />
-      </div>
+        // <MuiThemeProvider>
+        <div>
+          <SegmentCTAHeader />
+          <SegmentContent />
+          <SegmentFooter />
+        </div>
+
+        // </MuiThemeProvider>
+
     )
   }
 }
