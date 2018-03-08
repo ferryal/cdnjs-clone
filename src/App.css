@@ -30,9 +30,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 
 body {
   font-family: "Open Sans", serif;
+}
+
+.cta-header {
+  font-family: "Quicksand", sans-serif;
 }
 
 .wrapper {
@@ -90,7 +96,7 @@ input[type="text"] {
   border-bottom: solid 1px #f16051;
   width: 30%;
   padding-bottom: 4px;
-  color: #fff !important;
+  color: black !important;
   font-weight: lighter;
   letter-spacing: 2px;
   margin-bottom: 30px;

@@ -1,20 +1,32 @@
-import React from 'react';
-// import RaisedButton from 'material-ui/RaisedButton';
+import React, {Component} from 'react';
 
-const style = {
-  margin: 12,
-};
 
-const FormSearch = () => (
-  <div>
-    {/* <RaisedButton label="Default" style={style} />
-    <RaisedButton label="Primary" primary={true} style={style} />
-    <RaisedButton label="Secondary" secondary={true} style={style} />
-    <br />
-    <br />
-    <RaisedButton label="Full width" fullWidth={true} /> */}
-    <button>Search</button>
-  </div>
-);
-
-export default FormSearch;
+export default class FormSearch extends Component {
+  state ={
+    searchText: ''
+  }
+  onSearchChange = e => {
+    this.setState({ searchText: e.target.value})
+  }
+  handleSubmit = e => {
+    e.preventDefault()
+    this.props.onSearch(this.query.value)
+    e.currentTarget.reset()
+  }
+  render(){
+    return(
+      <div>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              name="city"
+              onChange={this.onSearchChange}
+              ref={input => (this.query = input)}
+              placeholder="Search What You Need"
+            />
+            <button>Get CDNJS</button>
+          </form>
+      </div>
+    )
+  }
+}
