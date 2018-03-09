@@ -16,10 +16,9 @@ export default class FormSearch extends Component {
   render(){
     return(
       <div>
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} className="form">
             <input
               type="text"
-              name="city"
               onChange={this.onSearchChange}
               ref={input => (this.query = input)}
               placeholder="Search What You Need"

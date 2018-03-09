@@ -10,15 +10,18 @@ const Lists = (props) => {
         <li>{list.name}</li>
         <li>{list.latest}</li>
       </ul>
+      // <div>
+      //   <td>{list.name}</td>
+      //   <td>{list.latest}</td>
+      // </div>
+
     )
   } else {
     lists= <p>Not Found</p>
   }
   return (
-    <div>
-      <ul>
+    <div className="results_">
         {lists}
-      </ul>
     </div>
   )
 }

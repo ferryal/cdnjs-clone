@@ -5,13 +5,11 @@ import Lists from './Lists'
 import axios from 'axios'
 
 class SegmentContent extends Component {
-  constructor(){
-    super()
-    this.state = {
+    state = {
       lists: []
     }
-  }
-  componentDidMount(){
+
+  componentWillMount(){
     this.Search()
   }
 
@@ -28,21 +26,17 @@ class SegmentContent extends Component {
 
   render(){
     return(
-      <div>
-        <div>
-          <FormSearch onSearch={this.Search}/>
-        </div>
-        <Lists data={this.state.lists}/>
-      </div>
+
+              <div>
+                <div>
+                  <FormSearch onSearch={this.Search}/>
+
+                </div>
+                <Lists data={this.state.lists}/>
+              </div>
+
     )
   }
-
-
-
-  // <div>
-  //   {/* form input */}
-  //   <FormSearch />
-  // </div>
 }
 
 export default SegmentContent
